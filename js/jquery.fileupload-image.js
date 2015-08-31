@@ -25,7 +25,7 @@
             'canvas-to-blob',
             './jquery.fileupload-process'
         ], factory);
-    
+
     } else {
         // Browser globals:
         factory(
@@ -266,8 +266,6 @@
                 }
                 var that = this,
                     dfd = $.Deferred();
-
-console.log(loadImage);
 
                 loadImage.parseMetaData(data.files[data.index], function (result) {
                     $.extend(data, result);
